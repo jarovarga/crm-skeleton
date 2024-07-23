@@ -4,7 +4,7 @@
 app/config/config.local.neon
 composer.lock
 docker-compose.override.yml
-logs/
+log/
 tmp/
 vendor/
 www/copy_assets_check
