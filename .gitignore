@@ -1,24 +1,49 @@
-log/*
-vendor/*
-!.gitignore
-!.htaccess
-
+# Project specific files #
+##########################
 .env
-config.local.neon
+app/config/config.local.neon
+composer.lock
 docker-compose.override.yml
-
-/.idea
-/.vscode
-.history
-
+logs/
+tmp/
+vendor/
 www/copy_assets_check
-www/layouts/application
-www/layouts/mailer
 www/layouts/admin/dist/*
 www/layouts/admin/scenariobuilder
 www/layouts/admin/segmenter
 www/layouts/admin/vendors/trumbowyg
+www/layouts/application
+www/layouts/mailer
 www/layouts/products/dist/*
 
+# OS generated files #
+######################
 .DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+._*
+.directory
+Icon?
 Thumbs.db
+ehthumbs.db
+
+# Tool specific files #
+#######################
+# Vim
+*~
+*.swo
+*.swp
+# Sublime Text & TextMate
+*.stTheme.cache
+*.sublime-*
+*.tmPreferences.cache
+*.tmlanguage.cache
+# Eclipse
+.settings/
+# JetBrains aka PhpStorm
+.idea/
+# NetBeans
+nbproject/
+# Visual Studio Code
+.vscode/
