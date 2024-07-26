@@ -1,5 +1,43 @@
 # CRM Skeleton
 
+<!-- TOC -->
+* [CRM Skeleton](#crm-skeleton)
+  * [Installation](#installation)
+    * [CRM Skeleton](#crm-skeleton-1)
+    * [Docker](#docker)
+      * [Steps to install application within docker](#steps-to-install-application-within-docker)
+  * [Available modules](#available-modules)
+  * [Custom module implementation](#custom-module-implementation)
+    * [Definition of the module](#definition-of-the-module)
+      * [Presenter mapping](#presenter-mapping)
+      * [Configuration ready](#configuration-ready)
+    * [Implementing presenters](#implementing-presenters)
+      * [Frontend presenters](#frontend-presenters)
+      * [Admin presenter (extra steps)](#admin-presenter-extra-steps)
+      * [Translations](#translations)
+    * [Module configuration](#module-configuration)
+      * [Custom repositories](#custom-repositories-)
+    * [Integration with the application](#integration-with-the-application)
+      * [registerAdminMenuItems](#registeradminmenuitems)
+      * [registerFrontendMenuItems](#registerfrontendmenuitems)
+      * [registerEventHandlers](#registereventhandlers)
+      * [registerWidgets](#registerwidgets)
+      * [registerCommands](#registercommands)
+      * [registerApiCalls](#registerapicalls)
+      * [registerCleanupFunction](#registercleanupfunction)
+      * [registerHermesHandlers](#registerhermeshandlers)
+        * [Restarting the worker](#restarting-the-worker)
+      * [registerAuthenticators](#registerauthenticators)
+      * [registerUserData](#registeruserdata)
+      * [registerSegmentCriteria](#registersegmentcriteria)
+      * [registerRoutes](#registerroutes)
+      * [cache](#cache)
+      * [registerLayouts](#registerlayouts)
+      * [registerSeeders](#registerseeders)
+      * [registerAccessProvider](#registeraccessprovider)
+      * [registerDataProviders](#registerdataproviders)
+<!-- TOC -->
+
 This is a pre-configured skeleton of CRM application with simple installation.
 
 [![Translation status @ Weblate](https://hosted.weblate.org/widgets/remp-crm/-/svg-badge.svg)](https://hosted.weblate.org/engage/remp-crm/)

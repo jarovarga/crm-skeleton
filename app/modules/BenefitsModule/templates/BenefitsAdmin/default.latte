@@ -1,0 +1,15 @@
+{block title}{_benefits.default.title}{/block}
+
+{block #content}
+
+{control 'simpleWidget', 'frontend.benefits.top'}
+
+<div class="page-header">
+  <h1>Benefits</h1>
+</div>
+
+<div n:ifset="$userId" class="row">
+  <div class="col-md-12">
+    Hello {$userId}
+  </div>
+</div>

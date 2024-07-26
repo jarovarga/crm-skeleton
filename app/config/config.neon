@@ -95,3 +95,6 @@ database:
 		password: @environmentConfig::get('CRM_DB_PASS')
 		options:
 			lazy: yes
+
+services:
+    - Crm\BenefitsModule\BenefitsModule
