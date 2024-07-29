@@ -16,8 +16,8 @@ use Crm\ApplicationModule\Models\Menu\MenuItem;
  */
 class BenefitsModule extends CrmModule
 {
-    private const ICON = 'fa fa-university';
-    private const PRIORITY = 100;
+    private const ICON = 'fa fa-crown';
+    private const PRIORITY = 790;
 
     /**
      * Registers admin menu items.
@@ -29,8 +29,13 @@ class BenefitsModule extends CrmModule
      */
     public function registerAdminMenuItems(MenuContainerInterface $menuContainer): void
     {
-        $mainMenu = new MenuItem('', '#', self::ICON, self::PRIORITY);
-        $menuItem = new MenuItem($this->translator->translate('benefits.menu.benefits_admin'), ':Benefits:BenefitsAdmin:', self::ICON, self::PRIORITY);
+        $mainMenu = new MenuItem('', '#', self::ICON, self::PRIORITY, true);
+        $menuItem = new MenuItem(
+            $this->translator->translate('benefits.menu.benefits_admin'),
+            ':Benefits:BenefitsAdmin:default',
+            self::ICON,
+            self::PRIORITY
+        );
 
         $mainMenu->addChild($menuItem);
         $menuContainer->attachMenuItem($mainMenu);

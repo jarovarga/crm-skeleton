@@ -97,4 +97,6 @@ database:
 			lazy: yes
 
 services:
-    - Crm\BenefitsModule\BenefitsModule
+	moduleManager:
+		setup:
+			- addModule(Crm\BenefitsModule\BenefitsModule())
